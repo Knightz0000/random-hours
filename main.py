@@ -2,11 +2,12 @@ import openpyxl
 import datetime
 import random
 
+linha_final = 63
 path = '/home/knightz____/workspace/projects/random-hours/planilhas/Rel_atividades 08-2024 KevinSilva.xlsx'
 wb = openpyxl.load_workbook(path)
 ws = wb.active
 
-for i in range(10, 63):
+for i in range(10, linha_final):
     if i % 2 == 0:
         hour = random.randint(7, 8)
         hour_later = random.randint(11, 12)
